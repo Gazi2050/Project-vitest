@@ -1,7 +1,13 @@
+import Counter from "./components/Counter/Counter";
+import Greeting from "./components/Greeting";
+import UserProfile from "./components/UserProfile";
+
 const App = () => {
   return (
-    <div>
-      <h1 className='text-2xl text-center font-bold'>vitest testing framework</h1>
+    <div className="space-y-5 h-screen pt-20 bg-zinc-800">
+      <Greeting name={"Jack"} />
+      <Counter />
+      <UserProfile userId={5} />
     </div>
   );
 };
